@@ -1,0 +1,162 @@
+@use "./variables";
+@use "@/app/styles/mixins";
+
+.item {
+  background-color: variables.$item-bg-color;
+  cursor: pointer;
+  font-size: variables.$item-font-size;
+  gap: 20px;
+  line-height: variables.$item-line-height;
+
+  @include mixins.respond-to(md) {
+    display: flex;
+  }
+}
+
+.depiction,
+.content {
+  @include mixins.respond-to(md) {
+    padding: 4px 0 7px 0;
+  }
+}
+
+.depiction {
+  position: relative;
+}
+
+.image {
+  aspect-ratio: 150 / 125;
+  display: block;
+  height: auto;
+  object-fit: cover;
+  width: 100%;
+
+  @include mixins.respond-to(md) {
+    height: 125px;
+    width: auto;
+  }
+}
+
+.promotion {
+  background: variables.$item-bg-color;
+  border-left: 1px solid variables.$item-border-color;
+  color: variables.$callout-fg-color;
+  left: 0;
+  padding: 7px 8px 5px 8px;
+  position: absolute;
+  top: 11px;
+  transition: padding .3s;
+
+  .item:hover & {
+    padding-left: 12px;
+  }
+}
+
+.content {
+  justify-content: space-between;
+  min-width: 0;
+  width: 100%;
+
+  @include mixins.respond-to(md) {
+    border-top: 1px solid variables.$item-border-color;
+    display: flex;
+  }
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  max-width: calc(100% - mixins.px-to-rem(90px) - 16px);
+}
+
+.title {
+  color: variables.$title-color;
+  font-size: variables.$title-font-size;
+  font-weight: 400;
+  letter-spacing: -.014rem;
+  margin: 10px 0 0 0;
+
+  @include mixins.respond-to(md) {
+    display: flex;
+    gap: 16px;
+  }
+
+  a {
+    color: inherit;
+    display: block;
+    overflow: hidden;
+    text-decoration: none;
+
+    @include mixins.respond-to(md) {
+      max-width: calc(min(100% - 96px, mixins.px-to-rem(295px)));
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    &:focus-visible {
+      outline-offset: 0;
+    }
+
+    .item:hover & {
+      text-decoration: underline;
+    }
+  }
+}
+
+.address {
+  color: variables.$address-fg-color;
+}
+
+.offer {
+  color: variables.$callout-fg-color;
+  margin-top: 14px;
+  text-decoration: underline;
+}
+
+.cancellation {
+  color: variables.$cancellation-fg-color;
+  margin-top: auto;
+}
+
+.pricing {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  @include mixins.respond-to(md) {
+    text-align: right;
+  }
+}
+
+.duration {
+  font-size: variables.$duration-font-size;
+  margin-top: 6px;
+
+  @include mixins.respond-to(md) {
+    margin-top: 0;
+  }
+}
+
+.price {
+  font-size: variables.$price-font-size;
+
+  sup {
+    font-size: variables.$price-sign-font-size;
+    font-weight: 300;
+    margin-right: 3px;
+    position: relative;
+    top: 2px;
+  }
+}
+
+.saving {
+  color: variables.$callout-fg-color;
+  font-size: variables.$savings-font-size;
+
+  @include mixins.respond-to(md) {
+    line-height: variables.$savings-line-height;
+    margin-bottom: 3px;
+    min-height: variables.$savings-line-height;
+  }
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="69" height="12" version="1.1" viewBox="0 0 69 12" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <mask id="m1" maskUnits="userSpaceOnUse">
+      <path d="m6 0a6 6 0 0 0-6 6 6 6 0 0 0 6 6 6 6 0 0 0 6-6 6 6 0 0 0-6-6zm14.174 0a6 6 0 0 0-6 6 6 6 0 0 0 6 6 6 6 0 0 0 6-6 6 6 0 0 0-6-6zm14.174 0a6 6 0 0 0-6 6 6 6 0 0 0 6 6 6 6 0 0 0 6-6 6 6 0 0 0-6-6zm14.172 0a6 6 0 0 0-6 6 6 6 0 0 0 6 6 6 6 0 0 0 6-6 6 6 0 0 0-6-6zm14.174 0a6 6 0 0 0-6 6 6 6 0 0 0 6 6 6 6 0 0 0 6-6 6 6 0 0 0-6-6z" fill="#fff"/>
+    </mask>
+  </defs>
+  <rect x="0" y="0" width="69" height="12" fill="#dcdcdc" mask="url(#m1)"/>
+  <rect x="0" y="0" width="69" height="12" fill="#edd702" mask="url(#m1)"/>
+</svg>

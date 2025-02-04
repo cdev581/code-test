@@ -1,0 +1,35 @@
+@use "./variables";
+@use "@/app/styles/mixins";
+
+.header {
+  border-bottom: 1px solid variables.$border-color;
+  background: variables.$bg-color;
+  width: 100%;
+  margin: auto;
+}
+
+.content {
+  align-items: center;
+  display: flex;
+  height: 64px;
+  justify-content: space-between;
+
+  @include mixins.respond-to(md) {
+    height: 100px;
+  }
+}
+
+.logo {
+  display: block;
+  margin-bottom: 4px;
+  text-decoration: none;
+
+  img {
+    display: block;
+  }
+}
+
+.github {
+  display: block;
+  text-decoration: none;
+}

@@ -1,0 +1,95 @@
+@use "./variables";
+@use "@/app/styles/mixins";
+@use "sass:math";
+
+.text {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    background: linear-gradient(variables.$heading-color-1, variables.$heading-color-2);
+    background-clip: text;
+    font-size: variables.$heading-size;
+    font-weight: 700;
+    line-height: variables.$heading-line-height;
+    margin: 0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  h1 {
+    font-size: variables.$heading-1-size;
+  }
+
+  p {
+    font-size: variables.$paragraph-size;
+    font-style: normal;
+    font-weight: 400;
+    line-height: variables.$paragraph-line-height;
+    margin: 0;
+
+    &:not(:last-child) {
+      margin-bottom: variables.$paragraph-gutter;
+    }
+  }
+
+  p.sub {
+    color: variables.$sub-color;
+    font-weight: 500;
+    font-style: normal;
+    font-size: variables.$sub-size;
+    margin: 0 0 12px 0;
+
+    @include mixins.respond-to(md) {
+      margin-bottom: 24px;
+    }
+
+    @include mixins.respond-to(xl) {
+      margin-bottom: 48px;
+    }
+  }
+
+  ul {
+    margin: variables.$paragraph-gutter 0 variables.$paragraph-gutter variables.$paragraph-gutter * 2;
+    padding: 0;
+  }
+
+  li {
+    line-height: variables.$paragraph-line-height;
+  }
+}
+
+.columns {
+  margin-top: math.div(variables.$paragraph-gutter, 2);
+
+  @include mixins.respond-to(md) {
+    display: flex;
+    gap: 48px;
+  }
+
+  @include mixins.respond-to(xl) {
+    gap: 64px;
+  }
+
+  div {
+    width: 100%;
+
+    @include mixins.respond-to(md) {
+      width: 50%;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: variables.$paragraph-gutter;
+
+      @include mixins.respond-to(md) {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  div:first-child:last-child {
+    width: 100%;
+  }
+}

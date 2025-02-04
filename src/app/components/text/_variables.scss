@@ -1,0 +1,14 @@
+
+@use "@/app/styles/variables";
+@use "@/app/styles/mixins";
+
+$heading-color-1: variables.$brand-primary-color-1;
+$heading-color-2: variables.$brand-primary-color-2;
+$heading-1-size: mixins.px-to-rem(32px);
+$heading-size: mixins.px-to-rem(24px);
+$heading-line-height: 1.25;
+$sub-color: variables.$sub-color;
+$sub-size: mixins.px-to-rem(16px);
+$paragraph-size: mixins.px-to-rem(16px);
+$paragraph-line-height: 1.6;
+$paragraph-gutter: mixins.px-to-rem(24px);

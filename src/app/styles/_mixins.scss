@@ -1,0 +1,23 @@
+@use "sass:math";
+@use "sass:map";
+
+$screen-widths: (
+  sm: 460px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px
+);
+
+@mixin respond-to($size) {
+  $width: map.get($screen-widths, $size);
+
+  @if $width {
+    @media screen and (min-width: #{$width}) {
+      @content;
+    }
+  }
+}
+
+@function px-to-rem($px, $base: 16px) {
+  @return math.div($px, $base) * 1rem;
+}

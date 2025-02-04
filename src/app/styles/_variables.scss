@@ -1,0 +1,20 @@
+@use "@/app/styles/mixins";
+
+// Colors
+$bg-color: #fff;
+$fg-color: #4a4a4a;
+$bg-color-callout: #f4f5f6;
+$brand-primary-color-1: #ff0000;
+$brand-primary-color-2: #be0000;
+$border-color: #ccc;
+$header-bg-color: #f4f5f6;
+$sub-color: #666;
+$showcase-fg-color: #3c3c3c;
+
+// Gutters
+$gutter: 12px;
+$gutter-md: 32px;
+
+// Containers
+$container-max-width-thin: mixins.px-to-rem(879px);
+$container-max-width: mixins.px-to-rem(1200px);

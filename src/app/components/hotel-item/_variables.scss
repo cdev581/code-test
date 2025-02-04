@@ -1,0 +1,17 @@
+@use "@/app/styles/mixins";
+@use "@/app/styles/variables";
+
+$item-bg-color: variables.$bg-color;
+$item-border-color: #e1e1e1;
+$item-font-size: mixins.px-to-rem(11px);
+$item-line-height: 1.3;
+$title-color: #000;
+$title-font-size: mixins.px-to-rem(18px);
+$callout-fg-color: variables.$brand-primary-color-2;
+$address-fg-color: #666;
+$cancellation-fg-color: #1c7133;
+$duration-font-size: mixins.px-to-rem(10px);
+$price-font-size: mixins.px-to-rem(28px);
+$price-sign-font-size: mixins.px-to-rem(16px);
+$savings-font-size: mixins.px-to-rem(15px);
+$savings-line-height: mixins.px-to-rem(24px);

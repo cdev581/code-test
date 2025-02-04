@@ -1,0 +1,87 @@
+@use "./variables";
+@use "./mixins";
+
+:root {
+  --font-inter: 'Inter';
+  --font-figtree: 'Figtree';
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: variables.$fg-color;
+  background: variables.$bg-color;
+  font-family: var(--font-figtree), "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+}
+
+*:focus-visible {
+  outline: 2px solid #000;
+  outline-offset: 2px;
+}
+
+.container,
+.container-thin {
+  margin: auto;
+  max-width: calc(100% - #{variables.$gutter * 2});
+  width: variables.$container-max-width;
+
+  @include mixins.respond-to(md) {
+    max-width: calc(100% - #{variables.$gutter-md * 2});
+  }
+}
+
+.container-thin {
+  width: variables.$container-max-width-thin;
+}
+
+.panel {
+  background: variables.$bg-color;
+  padding: 24px 0;
+
+  @include mixins.respond-to(md) {
+    padding: 40px 0;
+  }
+
+  @include mixins.respond-to(xl) {
+    padding: 90px 0;
+  }
+}
+
+.callout {
+  background: variables.$bg-color-callout;
+}
+
+.showcase {
+  border: 1px solid variables.$border-color;
+  // Multiple shadows give a more realistic effect, seeming as if the light is coming from several angles.
+  box-shadow: 0 10px 60px rgba(0, 0, 0, 0.05), 0 5px 20px rgba(0, 0, 0, 0.05), 0 2px 4px rgba(0, 0, 0, 0.1);
+  color: variables.$showcase-fg-color;
+  font-family: var(--font-inter), "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+  margin: variables.$gutter * 2 auto 0 auto;
+  min-height: 853px;
+  padding: variables.$gutter * 2 variables.$gutter;
+
+  @include mixins.respond-to(md) {
+    margin-top: variables.$gutter-md * 2;
+    padding: variables.$gutter-md * 2;
+  }
+}
+
+.sr-only {
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
