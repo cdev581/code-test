@@ -1,0 +1,143 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`format hotels lib formatting a hotel with missing properties defaults gracefully 1`] = `
+[
+  {
+    "address": "",
+    "cancellationType": "NOT_REFUNDABLE",
+    "href": "https://qantas.com.au",
+    "id": null,
+    "image": {
+      "alt": "",
+      "src": "https://unsplash.it/145/125/?random=0",
+    },
+    "offerName": "",
+    "price": null,
+    "promotionTitle": null,
+    "rating": null,
+    "savings": null,
+    "title": "",
+  },
+]
+`;
+
+exports[`format hotels lib hotel item formatting produces object of type Hotel 1`] = `
+[
+  {
+    "address": "7-11 Talavera Rd, North Ryde",
+    "cancellationType": "NOT_REFUNDABLE",
+    "href": "https://qantas.com.au",
+    "id": "cxd650nuyo",
+    "image": {
+      "alt": "Image of Courtyard by Marriott Sydney-North Ryde",
+      "src": "https://unsplash.it/145/125/?random=0",
+    },
+    "offerName": "Deluxe Balcony Room",
+    "price": {
+      "amount": 329,
+      "currency": "AUD",
+    },
+    "promotionTitle": "Exclusive Deal",
+    "rating": {
+      "ratingType": "self",
+      "ratingValue": 4.5,
+    },
+    "savings": {
+      "amount": 30,
+      "currency": "AUD",
+    },
+    "title": "Courtyard by Marriott Sydney-North Ryde",
+  },
+  {
+    "address": "339 Pitt St, Sydney",
+    "cancellationType": "FREE_CANCELLATION",
+    "href": "https://qantas.com.au",
+    "id": "mesq6mggyn",
+    "image": {
+      "alt": "Image of Primus Hotel Sydney",
+      "src": "https://unsplash.it/145/125/?random=1",
+    },
+    "offerName": "Deluxe King",
+    "price": {
+      "amount": 375,
+      "currency": "AUD",
+    },
+    "promotionTitle": "Exclusive Deal",
+    "rating": {
+      "ratingType": "self",
+      "ratingValue": 5,
+    },
+    "savings": {
+      "amount": 28,
+      "currency": "AUD",
+    },
+    "title": "Primus Hotel Sydney",
+  },
+  {
+    "address": "389 Pitt St, Sydney",
+    "cancellationType": "NOT_REFUNDABLE",
+    "href": "https://qantas.com.au",
+    "id": "xbtlihs45t",
+    "image": {
+      "alt": "Image of property",
+      "src": "https://unsplash.it/145/125/?random=2",
+    },
+    "offerName": "Deluxe King Room",
+    "price": {
+      "amount": 227,
+      "currency": "AUD",
+    },
+    "promotionTitle": "Red Hot",
+    "rating": {
+      "ratingType": "star",
+      "ratingValue": 4,
+    },
+    "savings": null,
+    "title": "Rydges World Square Sydney",
+  },
+  {
+    "address": "150 Day Street, Sydney",
+    "cancellationType": "FREE_CANCELLATION",
+    "href": "https://qantas.com.au",
+    "id": "5lm8loqk1s",
+    "image": {
+      "alt": "Image of PARKROYAL Darling Harbour Sydney",
+      "src": "https://unsplash.it/145/125/?random=3",
+    },
+    "offerName": "Deluxe King",
+    "price": {
+      "amount": 535,
+      "currency": "AUD",
+    },
+    "promotionTitle": "Exclusive Deal",
+    "rating": {
+      "ratingType": "star",
+      "ratingValue": 4.5,
+    },
+    "savings": null,
+    "title": "PARKROYAL Darling Harbour Sydney",
+  },
+  {
+    "address": "431-439 Pitt Street, Sydney",
+    "cancellationType": "FREE_CANCELLATION",
+    "href": "https://qantas.com.au",
+    "id": "kwjf8jlxg9",
+    "image": {
+      "alt": "Image of Metro Hotel Marlow Sydney Central",
+      "src": "https://unsplash.it/145/125/?random=4",
+    },
+    "offerName": "Deluxe King",
+    "price": {
+      "amount": 295,
+      "currency": "AUD",
+    },
+    "promotionTitle": "Bonus Points",
+    "rating": {
+      "ratingType": "star",
+      "ratingValue": 3.5,
+    },
+    "savings": null,
+    "title": "Metro Hotel Marlow Sydney Central",
+  },
+]
+`;

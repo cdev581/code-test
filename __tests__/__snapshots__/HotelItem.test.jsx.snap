@@ -1,0 +1,176 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HotelItem renders a hotel item with savings unchanged 1`] = `
+<div>
+  <div
+    class="item"
+  >
+    <div
+      class="depiction"
+    >
+      <img
+        alt="Image of Courtyard by Marriott Sydney-North Ryde"
+        class="image"
+        data-nimg="1"
+        decoding="async"
+        height="125"
+        loading="lazy"
+        src="https://unsplash.it/145/125/?random=0"
+        style="color: transparent;"
+        width="150"
+      />
+      <div
+        class="promotion"
+      >
+        Exclusive Deal
+      </div>
+    </div>
+    <div
+      class="content"
+    >
+      <div
+        class="details"
+      >
+        <h3
+          class="title"
+        >
+          <a
+            href="https://qantas.com.au"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Courtyard by Marriott Sydney-North Ryde
+          </a>
+        </h3>
+        <div
+          class="address"
+        >
+          7-11 Talavera Rd, North Ryde
+        </div>
+        <div
+          class="offer"
+        >
+          Deluxe Balcony Room
+        </div>
+        <div
+          class="cancellation"
+        />
+      </div>
+      <div
+        class="pricing"
+      >
+        <div
+          class="duration"
+        >
+          1 night total
+           (
+          AUD
+          )
+        </div>
+        <div
+          class="price"
+        >
+          <sup>
+            $
+          </sup>
+          329
+        </div>
+        <div
+          class="saving"
+        >
+           
+          Save
+           
+          $
+          30
+          ~
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`HotelItem renders a hotel item without savings unchanged 1`] = `
+<div>
+  <div
+    class="item"
+  >
+    <div
+      class="depiction"
+    >
+      <img
+        alt="Image of property"
+        class="image"
+        data-nimg="1"
+        decoding="async"
+        height="125"
+        loading="lazy"
+        src="https://unsplash.it/145/125/?random=2"
+        style="color: transparent;"
+        width="150"
+      />
+      <div
+        class="promotion"
+      >
+        Red Hot
+      </div>
+    </div>
+    <div
+      class="content"
+    >
+      <div
+        class="details"
+      >
+        <h3
+          class="title"
+        >
+          <a
+            href="https://qantas.com.au"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Rydges World Square Sydney
+          </a>
+        </h3>
+        <div
+          class="address"
+        >
+          389 Pitt St, Sydney
+        </div>
+        <div
+          class="offer"
+        >
+          Deluxe King Room
+        </div>
+        <div
+          class="cancellation"
+        />
+      </div>
+      <div
+        class="pricing"
+      >
+        <div
+          class="duration"
+        >
+          1 night total
+           (
+          AUD
+          )
+        </div>
+        <div
+          class="price"
+        >
+          <sup>
+            $
+          </sup>
+          227
+        </div>
+        <div
+          class="saving"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
